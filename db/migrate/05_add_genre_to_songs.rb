@@ -1,5 +1,4 @@
-class AddGenreToSongs < ActiveRecord::Migration
-  def change
+class AddGenreToSongs < ActiveRecord::Migration[5.2]
     add_column :songs, :genre_id, :integer
   end
 end
